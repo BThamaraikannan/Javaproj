@@ -6,7 +6,10 @@
 trigger:
 - master
 
-pool: BTK-Pool
+pool: 
+  name: BTK-Pool
+  demands:
+  -Agent.Name -equals btk-test1
 
 steps:
 - task: Maven@3
